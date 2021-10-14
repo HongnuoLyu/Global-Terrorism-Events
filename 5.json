@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 700,
+    "height":200,
+    "title":"The Number of Times the Weapon Used in Terrorist Incidents (1997-2007)",
+    "params": [{
+              "name": "Year_selection",
+              "value": 2014,
+              "bind": {
+                  "input": "range",
+                  "min": 1997,
+                  "max": 2017,
+                  "step": 1,
+                  "name": "Year:  "
+              }
+          }
+      ],
+      "data": {
+      "url": "https://raw.githubusercontent.com/HongnuoLyu/FIT3179_Assignment2/main/%E5%9B%BE5%E6%AD%A6%E5%99%A8.csv"
+    },
+    "transform": [{"filter": "datum.Year == Year_selection"}],
+    "mark": "bar",
+      "encoding": {
+      "color":{
+          "field": "Weapon",
+          "type": "nominal",
+          "scale": {    
+        "range":["#fde0ef","#d9d9d9","#fb8072","#fa9fb5","#969696","#f768a1","#737373","#67000d"]}
+      },
+      "y": {
+        "field": "Weapon", 
+        "title":"Weapon",
+        "type": "nominal", 
+        "axis": {"titleAngle":0,
+                  "titleAnchor":"start",
+                  "labelAngle": 0}},
+      "x": {
+        "field": "Amount", 
+        "title":"Number of Weapons Used",
+        "type": "quantitative"},
+      "tooltip": [{"field": "Amount", 
+                   "type": "quantitative", 
+                   "format": ","}]
+      }
+  }
