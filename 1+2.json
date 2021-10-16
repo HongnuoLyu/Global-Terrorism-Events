@@ -6,7 +6,7 @@
     },
     "hconcat": [{
             "vconcat": [{
-                "width": 537,
+                "width": 490,
                 "height": 300,
                 "projection": {
                     "type": "equalEarth", "rotate": [-150, 0, 0]
@@ -85,7 +85,7 @@
                         }
                 ]
             }, {
-                "width": 537,
+                "width": 490,
                 "height": 60,
                 "params": [{
                         "name": "time_brush",
