@@ -3,7 +3,7 @@
   "data": {"url": "https://raw.githubusercontent.com/HongnuoLyu/FIT3179_Assignment2/main/%E5%9B%BE4%E6%94%BB%E5%87%BB%E7%B1%BB%E5%9E%8B.csv"},
   "background":"transparent",
   "vconcat": [{
-    "width": 537,
+    "width": 490,
     "height":200,
     "mark": "area",
     "encoding": {
@@ -30,7 +30,7 @@
     }
     }
   }, {
-    "width": 537,
+    "width": 490,
     "height": 60,
     "mark": "area",
     "title":{
