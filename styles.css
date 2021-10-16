@@ -5,6 +5,8 @@ body {
 }
 .page{
     background-color:black;
+    padding-left:0.1cm;
+    padding-right:0.1cm;
 }
 
 h1{ 
