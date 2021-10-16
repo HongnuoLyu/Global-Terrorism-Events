@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 525,
+  "height":350,
+  "background":"transparent",
+  "view": {"fill":"#ddd"},
+  "data": {"url": "https://raw.githubusercontent.com/HongnuoLyu/FIT3179_Assignment2/main/%E5%9B%BE5%E6%AD%A6%E5%99%A8.csv"},
+  "mark": "rect",
+  "encoding": {
+    "x": {"field": "Year", 
+          "type": "ordinal",
+          "title":"Year",
+          "axis":{
+            "labelColor":"white","labelAngle": -45,"titleColor":"white","domainColor":"white","gridColor":"white","gridWidth":0.5
+          }
+        },
+    "y": {"field": "Weapon", 
+          "type": "nominal",
+          "title":"Weapon",
+          "axis": {"titleAngle":0,
+                  "titleAnchor":"start",
+                  "labelAlign":"right",
+                  "labelColor":"white","titleColor":"white","domainColor":"white","gridColor":"white","gridWidth":0.5}
+        },
+    "color": {"aggregate":"sum",
+              "field": "Amount",
+              "legend":{"labelColor":"white",
+                         "titleColor":"white"},
+              "title":"Amount",
+              "type": "quantitative",
+              "scale": {   "domain":[50,275,500,1000,2000,5000],  
+              "range": ["#fcbba1","#fc9272","#fb6a4a","#ef3b2c","#cb181d","#a50f15","#67000d"]
+                        }
+  },
+  "tooltip": [{"field": "Year", "type": "ordinal"},
+               {"field": "Weapon", "type": "nominal"},
+               {"field": "Amount", "type": "quantitative", "format": ","}
+]
+  },
+  "config": {
+    "axis": {"grid": true, "tickBand": "extent"}
+  }
+}

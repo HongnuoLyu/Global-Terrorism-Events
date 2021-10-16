@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/HongnuoLyu/FIT3179_Assignment2/main/%E5%9B%BE4%E6%94%BB%E5%87%BB%E7%B1%BB%E5%9E%8B.csv"},
+  "background":"transparent",
+  "vconcat": [{
+    "width": 587,
+    "height":200,
+    "mark": "area",
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "timeUnit":"yearmonth",
+        "scale": {"domain": {"param": "brush"}},
+        "axis": {"title": "", "tickCount": 5, "format": "%b-%Y",      
+        "labelColor":"white","titleColor":"white","domainColor":"white","gridColor":"white","gridWidth":0.5}
+      },
+      "y": {"field": "Amount", "type": "quantitative",
+      "title":"The Number of Occurrences",
+      "axis":{"labelColor":"white","titleColor":"white","domainColor":"white","gridColor":"white","gridWidth":0.5}
+      },
+      "color":{
+        "field":"Attack Type",
+        "legend":{"labelColor":"white",
+                  "titleColor":"white",
+                  "orient": "top","direction": "horizontal"},
+        "scale":{
+         "range":["#fde0ef","#d9d9d9","#fb8072","#fa9fb5","#969696","#cb181d","#f768a1","#737373","#67000d"]      
+        }
+    }
+    }
+  }, {
+    "width": 587,
+    "height": 60,
+    "mark": "area",
+    "title":{
+      "text":"Use this area chart to filter out the data based on time",
+      "color":"white"
+    },
+    "params": [{
+      "name": "brush",
+      "select": {"type": "interval", "encodings": ["x"]}
+    }],
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title":"Date",
+        "timeUnit":"yearmonth",
+        "axis": {"format": "%Y","labelColor":"white","titleColor":"white","domainColor":"white","gridColor":"white","gridWidth":0.5}
+      },
+      "y": {
+        "aggregate": "sum",
+        "field": "Amount",
+        "type": "quantitative",
+        "title":"Amount",
+        "axis": {"tickCount": 3, "grid": false,"labelColor":"white","titleColor":"white","domainColor":"white","gridColor":"white","gridWidth":0.5}
+      },
+      "color":{
+       "field":"Attack Type",
+        "scale":{
+         "range":["#fde0ef","#d9d9d9","#fb8072","#fa9fb5","#969696","#cb181d","#f768a1","#737373","#67000d"] 
+    }}
+ }}]
+}

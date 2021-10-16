@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script> 
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script> 
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script> 
+
+<script src="Assignment2.js"></script> 
+
+<title> 31979432-Hongnuo Lyu Assignment2 </title> 
+
+<link rel="stylesheet" href="styles.css">
+</head> 
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+
+<div class = "page">
+<body> 
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <br/><br/>
+<h1 id="c-align">Exploring the Global Terrorism in 1997-2017</h1> 
+</div>
+</div>
+
+<h2 id="c-align">Global Distribution of Total Terrorist Incidents </h2> 
+<div class="pure-g">
+<div class="pure-u-2-3">
+     <div id="mapline"> </div> 
+</div>
+<div class="pure-u-1-3">
+    <p1 id="l-align"> 
+     <br/>
+     <br/>
+  From 1997 to 2007, the top three Asian nations in terms of total terrorist attacks were <strong>Pakistan</strong>, <strong>Afghanistan</strong> and <strong>India</strong>. 
+  Other Asian countries, on the other hand, experienced fewer terrorist strikes. 
+  <br/><br/>Furthermore, terrorist attacks were primarily concentrated in <strong>Northern Africa</strong>. 
+  <br/><strong>Russia</strong> is the European country with the most terrorist strikes in the north.
+     </p1>
+    <p1 id="l-align"> 
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+  According to the bar chart, the total number of terrorist attacks has shown an <strong>upward trend</strong>. 
+  The greatest number of occurrences happened in <strong>2014</strong>. 
+  <br/><br/>Fixing the period in the interval of 2014 reveals that <strong>Pakistan</strong>, <strong>Afghanistan</strong> and <strong>India</strong> remain prominent although <strong> Iraq </strong> has the highest number of terrorist events.
+    </p1>
+</div>
+</div>
+
+
+<h2 id="c-align">Death & Injury Rate </h2> 
+<div class="pure-g">
+<div class="pure-u-2-3">
+    <br/>
+<div id="line"></div>
+</div>
+<div class="pure-u-1-3">
+<p1 id="l-align"> 
+    <br/><br/>
+    From 1997 to 2017, the number of <span class="injury_text"><strong>injuries</strong></span> and <span class="death_text"><strong>deaths</strong></span> per 10,000 people increased along with the increase in the number of terrorist incidents. 
+    <br/><br/>However, the <span class="injury_text"><strong>injury rate</strong></span>  per 10,000 people was always higher than the <span class="death_text"><strong>death rate</strong></span> except in 2014. 
+    <br/><br/>Meanwhile, three peaks can be seen in 2001, 2007 and 2014, which respectively are <span class="injury_text"><strong>4.2% and 5.7% injury rate</strong></span> and <span class="death_text"><strong>6.6% death rate</strong></span>.
+</p1>
+<p2 id="l-align"> 
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    Tips: Selecting the rate type to view the specific values of the <span class="injury_text">injury rate</span> and <span class="death_text">death rate</span> from 1997 to 2017.
+</p2>
+</div>
+</div>
+
+
+<h2 id="c-align">The Number of Times Different Attack Types Occurred </h2> 
+<div class="pure-g">
+    <div class="pure-u-2-3">
+        <div id="area"></div>
+        </div>
+<div class="pure-u-1-3">
+<p1 id="l-align">
+    <br/><br/><br/>
+    During these 20 years, no matter what year it was, the type of terrorist attacks was dominated by <span class="attacktype_text"><strong>explosions</strong></span>. 
+    <br/><br/>Therefore, we made bold assumption that explosions contributed the majority of the injury and death rate. 
+    <br/><br/> In addition, the amount of terrorist incidents caused by <span class="attacktype2_text"><strong>armed assaults</strong></span> has steadily grown since 2008.
+</p1>
+<p2 id="l-align"> 
+    <br/><br/><br/><br/>
+    Tips: Using the small diagram to select the specified time range. 
+</p2>
+</div>
+</div>
+
+
+<h2 id="c-align">The Number of Times the Weapon Used in Terrorist Incidents </h2>  
+<div class="pure-g">
+<div class="pure-u-2-3">
+<div id="bar2"></div>
+</div>
+<div class="pure-u-1-3">
+<p1 id="l-align"> 
+    <br/>
+    <strong> Explosive materials</strong> and <strong>firearms</strong> are used as the primary weapons of terrorist attacks. 
+    <br/><br/>However, biological materials, chemical materials and vehicles are rarely used. 
+    <br/><strong>Radioactive elements</strong> as weapons only appeared in 2000 and 2007. 
+    <br/><br/>It is interesting that <strong>fake weapons</strong> are even an option;
+    <br/><br/>Combined with the above figure, <strong>explosive terrorist attacks</strong> and <strong>explosive materials</strong> have similar trends in the past 20 years. 
+    <br/><br/>So, we speculate that explosive terrorist attacks are directly caused by explosive materials, rather than indirectly using other things to cause explosions.
+</p1>
+<p2 id="l-align"> 
+    <br/> <br/> Note: light gray means no data
+</p2>
+</div>
+</div>
+<br/><br/>
+</body> 
+</div>
+</html> 

@@ -1,0 +1,45 @@
+body {
+    background-color:gray;
+    padding-left: 5cm;
+    padding-right: 5cm;
+}
+.page{
+    background-color:black;
+}
+
+h1{ 
+    font-size: 36px;
+    color: white;
+}
+.death_text{
+    color: #e41a1c;
+}
+.injury_text{
+    color: #fa9fb5;
+}
+.attacktype_text{
+    color: #fb8072;
+}
+.attacktype2_text{
+    color: #fde0ef;
+}
+h2{ 
+    font-size: 24px;
+    color: white;
+}
+p1{
+    font-size: 16px;
+    color: white;
+
+}
+p2{
+    font-size: 13px;
+    color: white;
+}
+#l-align{
+    text-align: left;
+}
+#c-align{
+    text-align: center;
+    border: 1px solid white;
+}
