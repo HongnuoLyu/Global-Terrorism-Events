@@ -37,7 +37,7 @@
     "x": {
     "field": "Year",
     "type": "ordinal",
-    "axis": {"labelAngle": 0,"labelColor":"white","titleColor":"white","domainColor":"white","gridColor":"white","gridWidth":0.5}
+    "axis": {"labelAngle": -45,"labelColor":"white","titleColor":"white","domainColor":"white","gridColor":"white","gridWidth":0.5}
     }
 },    
     "layer":[
