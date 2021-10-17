@@ -29,6 +29,7 @@ h1{
 h2{ 
     font-size: 24px;
     color: white;
+    border: 1px solid white;
 }
 p1{
     font-size: 16px;
@@ -44,5 +45,4 @@ p2{
 }
 #c-align{
     text-align: center;
-    border: 1px solid white;
 }
